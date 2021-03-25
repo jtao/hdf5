@@ -211,7 +211,7 @@ jobs:
     - name: Coderrect Scan
       uses: coderrect-inc/coderrect-github-action@v1.2
       with:
-        buildPath: ${{ runner.workspace }}/build  
+        buildPath: "build"
     
     - name: Autotools Test
       if: matrix.generator == 'autogen'
